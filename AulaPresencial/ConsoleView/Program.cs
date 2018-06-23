@@ -1,4 +1,5 @@
-﻿using Modelos;
+﻿using Controllers;
+using Modelos;
 using System;
 
 namespace ConsoleView
@@ -7,9 +8,24 @@ namespace ConsoleView
     {
         static void Main(string[] args)
         {
-            Aluno a = CadastrarAluno();
+            AlunosController alunosController = new AlunosController();
 
-            ImprimirDadosAluno(a);
+            // Cadastrando alunos
+            Aluno a = CadastrarAluno();
+            alunosController.Inserir(a);
+
+            Aluno b = CadastrarAluno();
+            alunosController.Inserir(b);
+
+            Aluno c = CadastrarAluno();
+            alunosController.Inserir(c);
+
+            foreach (Aluno aluno in alunosController.ListarTodos())
+            {
+                ImprimirDadosAluno(aluno);
+            }
+
+            // ImprimirDadosAluno(a);
 
             Console.ReadKey();
 
