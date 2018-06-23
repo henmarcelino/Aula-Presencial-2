@@ -30,27 +30,27 @@ namespace ConsoleView
             ProfessoresController professorController = new ProfessoresController();
 
             // Cadastrando professores
-            Professor d = CadastrarProfessor();
-            professorController.Inserir(a);
+            Professor p = CadastrarProfessor();
+            professorController.Inserir(p);
 
             foreach (Professor professor in professorController.ListarTodos())
             {
                 ImprimirDadosProfessor(professor);
             }
-
-            /*
+        
+            
             DisciplinasController disciplinaController = new DisciplinasController();
 
             //Cadastro disciplinas
 
-            Disciplina e = CadastrarDisciplina();
-            disciplinaController.Inserir(a);
+            Disciplina d = CadastrarDisciplina();
+            disciplinaController.Inserir(d);
             
             foreach (Disciplina disciplina in DisciplinasController.ListarTodos())
             {
                 ImprimirDadosDisciplina(disciplina);
             }
-             */
+             
 
 
 
@@ -61,10 +61,26 @@ namespace ConsoleView
             
         }
 
-        private static void ImprimirDadosProfessor(object professor)
+        private static void ImprimirDadosDisciplina(Disciplina disciplina)
         {
-            Console.WriteLine("Professor: " + a.Nome);
-            Console.WriteLine("Cadastro: " + a.Cadastro);
+            Console.WriteLine("Materia: " + disciplina.Materia);
+            Console.WriteLine("Ciclo: " + disciplina.Ciclo);
+        }
+
+        private static Disciplina CadastrarDisciplina()
+        {
+            Disciplina a = new Disciplina();
+
+            Console.WriteLine("Digite a Matéria: ");
+            a.Disciplina = (Console.ReadLine());
+            Console.WriteLine("Digite o Ciclo: ");
+            a.Ciclo = int.Parse(Console.ReadLine());
+        }
+
+        private static void ImprimirDadosProfessor(Professor professor)
+        {
+            Console.WriteLine("Professor: " + professor.Nome);
+            Console.WriteLine("Cadastro: " + professor.Cadastro);
         }
 
         private static Professor CadastrarProfessor()

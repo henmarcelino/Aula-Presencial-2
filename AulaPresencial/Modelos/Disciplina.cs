@@ -11,5 +11,9 @@ namespace Modelos
         public string Materia { get; set; }
 
         public int Ciclo { get; set; }
+
+        public string Professor { get; set; }
+
+        public int Aluno { get; set; }
     }
 }
