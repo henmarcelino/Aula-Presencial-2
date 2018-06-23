@@ -46,7 +46,7 @@ namespace ConsoleView
             Disciplina d = CadastrarDisciplina();
             disciplinaController.Inserir(d);
             
-            foreach (Disciplina disciplina in DisciplinasController.ListarTodos())
+            foreach (Disciplina disciplina in disciplinaController.ListarTodos())
             {
                 ImprimirDadosDisciplina(disciplina);
             }
@@ -72,10 +72,10 @@ namespace ConsoleView
             Disciplina a = new Disciplina();
 
             Console.WriteLine("Digite a Matéria: ");
-            a.Disciplina = (Console.ReadLine());
+            a.Materia = (Console.ReadLine());
             Console.WriteLine("Digite o Ciclo: ");
             a.Ciclo = int.Parse(Console.ReadLine());
-            return a
+            return a;
         }
 
         private static void ImprimirDadosProfessor(Professor professor)
