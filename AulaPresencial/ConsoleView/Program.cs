@@ -75,6 +75,7 @@ namespace ConsoleView
             a.Disciplina = (Console.ReadLine());
             Console.WriteLine("Digite o Ciclo: ");
             a.Ciclo = int.Parse(Console.ReadLine());
+            return a
         }
 
         private static void ImprimirDadosProfessor(Professor professor)
