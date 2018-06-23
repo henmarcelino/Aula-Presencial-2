@@ -20,16 +20,62 @@ namespace ConsoleView
             Aluno c = CadastrarAluno();
             alunosController.Inserir(c);
 
+            
+
             foreach (Aluno aluno in alunosController.ListarTodos())
             {
                 ImprimirDadosAluno(aluno);
             }
+
+            ProfessoresController professorController = new ProfessoresController();
+
+            // Cadastrando professores
+            Professor d = CadastrarProfessor();
+            professorController.Inserir(a);
+
+            foreach (Professor professor in professorController.ListarTodos())
+            {
+                ImprimirDadosProfessor(professor);
+            }
+
+            /*
+            DisciplinasController disciplinaController = new DisciplinasController();
+
+            //Cadastro disciplinas
+
+            Disciplina e = CadastrarDisciplina();
+            disciplinaController.Inserir(a);
+            
+            foreach (Disciplina disciplina in DisciplinasController.ListarTodos())
+            {
+                ImprimirDadosDisciplina(disciplina);
+            }
+             */
+
+
 
             // ImprimirDadosAluno(a);
 
             Console.ReadKey();
 
             
+        }
+
+        private static void ImprimirDadosProfessor(object professor)
+        {
+            Console.WriteLine("Professor: " + a.Nome);
+            Console.WriteLine("Cadastro: " + a.Cadastro);
+        }
+
+        private static Professor CadastrarProfessor()
+        {
+            Professor a = new Professor();
+
+            Console.WriteLine("Digite o Professor: ");
+            a.Nome = (Console.ReadLine());
+            Console.WriteLine("Digite o Cadastro: ");
+            a.Cadastro = int.Parse(Console.ReadLine());
+            return a;
         }
 
         private static void ImprimirDadosAluno(Aluno a)
