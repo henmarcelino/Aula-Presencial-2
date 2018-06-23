@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleView
+namespace Modelos
 {
     public class Aluno
     {

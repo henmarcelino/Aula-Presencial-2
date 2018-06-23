@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluno", "ConsoleApplication1\Aluno.csproj", "{8D0F47CD-4770-46BE-821A-906F6616AA61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleView", "ConsoleView\ConsoleView.csproj", "{8D0F47CD-4770-46BE-821A-906F6616AA61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caixa", "Caixa\Caixa.csproj", "{EC8DABBB-3522-4A93-B2AF-B879B2A2346B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{991E797F-89D3-46A7-8389-C0990F493D80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8D0F47CD-4770-46BE-821A-906F6616AA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0F47CD-4770-46BE-821A-906F6616AA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0F47CD-4770-46BE-821A-906F6616AA61}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC8DABBB-3522-4A93-B2AF-B879B2A2346B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC8DABBB-3522-4A93-B2AF-B879B2A2346B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC8DABBB-3522-4A93-B2AF-B879B2A2346B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC8DABBB-3522-4A93-B2AF-B879B2A2346B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991E797F-89D3-46A7-8389-C0990F493D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991E797F-89D3-46A7-8389-C0990F493D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991E797F-89D3-46A7-8389-C0990F493D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991E797F-89D3-46A7-8389-C0990F493D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

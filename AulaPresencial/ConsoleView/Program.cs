@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelos;
+using System;
 
 namespace ConsoleView
 {
@@ -12,25 +13,13 @@ namespace ConsoleView
 
             Console.ReadKey();
 
-
-            Console.WriteLine(a.Nome);
-
-
-            Console.WriteLine("Digite o nome do aluno: ");
-            a.Nome = Console.ReadLine(); //set
-
-            a.Matricula = 123; //set
-
-
-            Console.WriteLine("Aluno: " + a.Nome); //get
-
-            Console.ReadKey();
+            
         }
 
         private static void ImprimirDadosAluno(Aluno a)
         {
-            Console.WriteLine("Aluno" + a.Nome);
-            Console.WriteLine("Matricula" + a.Matricula);
+            Console.WriteLine("Aluno: " + a.Nome);
+            Console.WriteLine("Matricula: " + a.Matricula);
         }
 
         private static Aluno CadastrarAluno()
