@@ -8,6 +8,22 @@ namespace ConsoleView
     {
         static void Main(string[] args)
         {
+            
+            ProfessoresController professorController = new ProfessoresController();
+
+            // Cadastrando professores
+            Professor p = CadastrarProfessor();
+            professorController.Inserir(p);
+            
+            
+            DisciplinasController disciplinaController = new DisciplinasController();
+
+            //Cadastro disciplinas
+
+            Disciplina d = CadastrarDisciplina();
+            disciplinaController.Inserir(d);
+            
+
             AlunosController alunosController = new AlunosController();
 
             // Cadastrando alunos
@@ -20,37 +36,23 @@ namespace ConsoleView
             Aluno c = CadastrarAluno();
             alunosController.Inserir(c);
 
-            
+
+            foreach (Professor professor in professorController.ListarTodos())
+            {
+                ImprimirDadosProfessor(professor);
+            }
+
+            foreach (Disciplina disciplina in disciplinaController.ListarTodos())
+            {
+                ImprimirDadosDisciplina(disciplina);
+            }
 
             foreach (Aluno aluno in alunosController.ListarTodos())
             {
                 ImprimirDadosAluno(aluno);
             }
 
-            ProfessoresController professorController = new ProfessoresController();
 
-            // Cadastrando professores
-            Professor p = CadastrarProfessor();
-            professorController.Inserir(p);
-
-            foreach (Professor professor in professorController.ListarTodos())
-            {
-                ImprimirDadosProfessor(professor);
-            }
-        
-            
-            DisciplinasController disciplinaController = new DisciplinasController();
-
-            //Cadastro disciplinas
-
-            Disciplina d = CadastrarDisciplina();
-            disciplinaController.Inserir(d);
-            
-            foreach (Disciplina disciplina in disciplinaController.ListarTodos())
-            {
-                ImprimirDadosDisciplina(disciplina);
-            }
-             
 
 
 
