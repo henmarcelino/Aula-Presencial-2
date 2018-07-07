@@ -1,4 +1,5 @@
-﻿using Modelos;
+﻿using Controllers;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,11 @@ namespace WindowsFormsView.TelasAluno
         {
             Aluno novoAluno = new Aluno();
 
+            novoAluno.Nome = txtNome.Text;
+            novoAluno.Matricula = int.Parse(txtMatricula.Text);
+
+            AlunosController alunosController = new AlunosController();
+            alunosController.Inserir(novoAluno);
         }
     }
 }
