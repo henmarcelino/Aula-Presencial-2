@@ -27,7 +27,7 @@ namespace WindowsFormsView.TelasProfessor
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Professor novoProfessor = new TelasProfessor();
+            Professor novoProfessor = new Professor();
 
             novoProfessor.Nome = txtNome.Text;
             novoProfessor.Matricula = int.Parse(txtCadastro.Text);
