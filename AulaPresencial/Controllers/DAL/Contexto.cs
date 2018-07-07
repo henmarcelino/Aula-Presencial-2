@@ -8,7 +8,7 @@ using Modelos;
 
 namespace Controllers.DAL
 {
-    public class Contexto : Dbcontext
+    public class Contexto : DbContext
     {
         public Contexto() : base("strConn")  // base = (super do java), "strConn" = nome da conexão com banco
         {
