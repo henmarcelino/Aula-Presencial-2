@@ -59,6 +59,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AulaPresencialDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dbcontext.cs" />
     <Compile Include="Disciplina.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

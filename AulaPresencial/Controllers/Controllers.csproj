@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlunosController.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="DisciplinasController.cs" />
     <Compile Include="ProfessoresController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
