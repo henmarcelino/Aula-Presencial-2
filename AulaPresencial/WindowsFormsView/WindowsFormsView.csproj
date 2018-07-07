@@ -120,6 +120,9 @@
     <EmbeddedResource Include="TelasDisciplina\frmCadastroDisciplina.resx">
       <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelasDisciplina\frmListaDisciplinas.resx">
+      <DependentUpon>frmListaDisciplinas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelasProfessor\frmCadastroProfessor.resx">
       <DependentUpon>frmCadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
