@@ -55,6 +55,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TelasDisciplina\frmCadastroDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasDisciplina\frmCadastroDisciplina.Designer.cs">
+      <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasDisciplina\frmListaDisciplinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasDisciplina\frmListaDisciplinas.Designer.cs">
+      <DependentUpon>frmListaDisciplinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasProfessor\frmCadastroProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasProfessor\frmCadastroProfessor.Designer.cs">
+      <DependentUpon>frmCadastroProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasProfessor\frmListaProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasProfessor\frmListaProfessores.Designer.cs">
+      <DependentUpon>frmListaProfessores.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelasAluno\frmCadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +111,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelasAluno\frmListaAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasAluno\frmListaAlunos.Designer.cs">
+      <DependentUpon>frmListaAlunos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelasDisciplina\frmCadastroDisciplina.resx">
+      <DependentUpon>frmCadastroDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasProfessor\frmCadastroProfessor.resx">
+      <DependentUpon>frmCadastroProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasProfessor\frmListaProfessores.resx">
+      <DependentUpon>frmListaProfessores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelasAluno\frmCadastroAluno.resx">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +150,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelasAluno\frmListaAlunos.resx">
+      <DependentUpon>frmListaAlunos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,10 +167,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Disciplina\" />
-    <Folder Include="Professor\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Controllers\Controllers.csproj">
       <Project>{06950dfe-cc81-404a-939b-dfb4329404af}</Project>

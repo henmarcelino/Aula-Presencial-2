@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsView.TelasProfessor;
 using WindowsFormsView.TelasAluno;
 
 namespace WindowsFormsView
@@ -26,7 +27,20 @@ namespace WindowsFormsView
 
         private void btnListarAluno_Click(object sender, EventArgs e)
         {
+            frmListaAlunos listaAlunos = new frmListaAlunos();
+            listaAlunos.ShowDialog();
+        }
 
+        private void btnCadastrarProfessor_Click(object sender, EventArgs e)
+        {
+            frmCadastroProfessor cadProfessor = new frmCadastroProfessor();
+            cadProfessor.ShowDialog();
+        }
+
+        private void btnListarProfessor_Click(object sender, EventArgs e)
+        {
+            frmListaProfessores listProfessores = new frmListaProfessores();
+            listProfessores.ShowDialog();
         }
     }
 }
