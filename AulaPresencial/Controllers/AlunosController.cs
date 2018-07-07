@@ -22,13 +22,13 @@ namespace Controllers
 
         public List<Aluno> ListarTodos()
         {
-            return Contexto.Alunos.ToList();
+            return contexto.Alunos.ToList();
         }
 
         public Aluno BuscarPorMatricula(int matricula)
         {
             // Usando LINQ
-            var aluno = from a in Contexto.Alunos
+            var aluno = from a in contexto.Alunos
                         where a.Matricula == matricula
                         select a;
             return (Aluno)aluno;
@@ -36,7 +36,7 @@ namespace Controllers
 
         public Aluno BuscarPorID(int idAluno)
         {
-            return Contexto.Alunos.Find(idAluno); // Pesquisa por chave primaria
+            return contexto.Alunos.Find(idAluno); // Pesquisa por chave primaria
         }
 
         public void Atualizar(Aluno aluno)

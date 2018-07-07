@@ -12,7 +12,15 @@ namespace Modelos
     {
         public int AlunoID { get; set; }
 
-        public string Nome { get; set; }
+        private string nome;
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
+
+        //public string Nome { get; set; }
 
         [Required]
         public int Matricula { get; set; }
