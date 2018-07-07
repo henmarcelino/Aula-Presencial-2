@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelos;
 
-namespace Modelos
+namespace Controllers.DAL
 {
     public class Contexto : Dbcontext
     {
@@ -14,6 +14,8 @@ namespace Modelos
         {
 
         }
+
+        public DbSet<Aluno> Alunos { get; set; }  // tabela de alunos
     }
-    public DbSet<Aluno> Alunos { get; set; }  // tabela de alunos
+   
 }

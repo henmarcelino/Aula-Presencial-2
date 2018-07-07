@@ -17,8 +17,7 @@ namespace Controllers
             contexto.Alunos.Add(novoAluno);
             contexto.SaveChanges();
         }
-
-
+        
 
         public List<Aluno> ListarTodos()
         {
