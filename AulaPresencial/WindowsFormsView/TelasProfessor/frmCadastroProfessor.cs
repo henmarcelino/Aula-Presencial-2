@@ -12,28 +12,29 @@ using System.Windows.Forms;
 
 namespace WindowsFormsView.TelasProfessor
 {
-    public partial class frmCadastroProfessor : Form
+    public partial class FrmCadastroProfessor : Form
     {
-        public frmCadastroProfessor()
+        public FrmCadastroProfessor()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = string.Empty; //""
             txtCadastro.Text = string.Empty;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Professor novoProfessor = new Professor();
+            Professor novoProfessor = new Professor
+            {
+                Nome = txtNome.Text,
+                Cadastro = int.Parse(txtCadastro.Text)
+            };
 
-            novoProfessor.Nome = txtNome.Text;
-            novoProfessor.Matricula = int.Parse(txtCadastro.Text);
-
-            ProfessorController professoresController = new ProfessoresController();
-            professorController.Inserir(novoProfessor);
+            ProfessoresController professoresController = new ProfessoresController();
+            professoresController.Inserir(novoProfessor);
         }
     }
 }

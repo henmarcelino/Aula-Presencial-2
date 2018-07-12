@@ -12,25 +12,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsView.TelasAluno
 {
-    public partial class frmCadastroAluno : Form
+    public partial class FrmCadastroAluno : Form
     {
-        public frmCadastroAluno()
+        public FrmCadastroAluno()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = string.Empty; //""
             txtMatricula.Text = string.Empty;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Aluno novoAluno = new Aluno();
-
-            novoAluno.Nome = txtNome.Text;
-            novoAluno.Matricula = int.Parse(txtMatricula.Text);
+            Aluno novoAluno = new Aluno
+            {
+                Nome = txtNome.Text,
+                Matricula = int.Parse(txtMatricula.Text)
+            };
 
             AlunosController alunosController = new AlunosController();
             alunosController.Inserir(novoAluno);

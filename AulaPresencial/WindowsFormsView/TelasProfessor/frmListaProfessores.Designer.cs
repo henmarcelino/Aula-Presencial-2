@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsView.TelasProfessor
 {
-    partial class frmListaProfessores
+    partial class FrmListaProfessores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvProfessores = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProfessores)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvProfessores
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(613, 376);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvProfessores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProfessores.Location = new System.Drawing.Point(13, 13);
+            this.dgvProfessores.Name = "dgvProfessores";
+            this.dgvProfessores.Size = new System.Drawing.Size(613, 376);
+            this.dgvProfessores.TabIndex = 0;
             // 
-            // frmListaProfessores
+            // FrmListaProfessores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 401);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "frmListaProfessores";
+            this.Controls.Add(this.dgvProfessores);
+            this.Name = "FrmListaProfessores";
             this.Text = "frmListaProfessores";
-            this.Load += new System.EventHandler(this.frmListaProfessores_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmListaProfessores_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProfessores)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProfessores;
     }
 }

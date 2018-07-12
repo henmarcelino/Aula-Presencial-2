@@ -36,6 +36,7 @@ namespace ConsoleView
             Aluno c = CadastrarAluno();
             alunosController.Inserir(c);
 
+            Console.Clear();
 
             foreach (Professor professor in professorController.ListarTodos())
             {

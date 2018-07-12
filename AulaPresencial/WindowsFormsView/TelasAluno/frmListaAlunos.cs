@@ -19,7 +19,7 @@ namespace WindowsFormsView.TelasAluno
         }
         
 
-        private void frmListaAlunos_Load(object sender, EventArgs e)
+        private void FrmListaAlunos_Load(object sender, EventArgs e)
         {
             // Preencher lista ao carregar a tela (LOAD)
             AlunosController alunosController = new AlunosController();

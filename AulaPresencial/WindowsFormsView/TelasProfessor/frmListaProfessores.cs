@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsView.TelasProfessor
 {
-    public partial class frmListaProfessores : Form
+    public partial class FrmListaProfessores : Form
     {
-        public frmListaProfessores()
+        public FrmListaProfessores()
         {
             InitializeComponent();
         }
 
-        private void frmListaProfessores_Load(object sender, EventArgs e)
+        private void FrmListaProfessores_Load(object sender, EventArgs e)
         {
             ProfessoresController professoresController = new ProfessoresController();
             dgvProfessores.DataSource = professoresController.ListarTodos();

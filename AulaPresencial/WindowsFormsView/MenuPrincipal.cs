@@ -21,7 +21,7 @@ namespace WindowsFormsView
 
         private void btnCadastrarAluno_Click(object sender, EventArgs e)
         {
-            frmCadastroAluno cadAluno = new frmCadastroAluno();
+            FrmCadastroAluno cadAluno = new FrmCadastroAluno();
             cadAluno.ShowDialog();
         }
 
@@ -33,13 +33,13 @@ namespace WindowsFormsView
 
         private void btnCadastrarProfessor_Click(object sender, EventArgs e)
         {
-            frmCadastroProfessor cadProfessor = new frmCadastroProfessor();
+            FrmCadastroProfessor cadProfessor = new FrmCadastroProfessor();
             cadProfessor.ShowDialog();
         }
 
         private void btnListarProfessor_Click(object sender, EventArgs e)
         {
-            frmListaProfessores listProfessores = new frmListaProfessores();
+            FrmListaProfessores listProfessores = new FrmListaProfessores();
             listProfessores.ShowDialog();
         }
     }

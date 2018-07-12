@@ -48,7 +48,7 @@
             this.Controls.Add(this.dgvAlunos);
             this.Name = "frmListaAlunos";
             this.Text = "frmListaAlunos";
-            this.Load += new System.EventHandler(this.frmListaAlunos_Load);
+            this.Load += new System.EventHandler(this.FrmListaAlunos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();
             this.ResumeLayout(false);
 
