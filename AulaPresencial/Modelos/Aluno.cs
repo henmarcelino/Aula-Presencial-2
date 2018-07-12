@@ -10,6 +10,7 @@ namespace Modelos
 {
     public class Aluno
     {
+        [Key]
         public int AlunoID { get; set; }
 
         private string nome;
