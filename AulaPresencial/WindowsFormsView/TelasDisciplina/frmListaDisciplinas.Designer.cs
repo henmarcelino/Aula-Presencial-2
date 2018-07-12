@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsView.Disciplina
+﻿namespace WindowsFormsView.TelasDisciplinas
 {
     partial class frmListaDisciplinas
     {
