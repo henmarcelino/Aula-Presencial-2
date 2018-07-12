@@ -50,9 +50,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Cadastro";
+            this.label2.Text = "Matricula";
             // 
             // txtNome
             // 
@@ -88,7 +88,7 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // frmCadastroAluno
+            // FrmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmCadastroAluno";
+            this.Name = "FrmCadastroAluno";
             this.Text = "frmCadastroAluno";
             this.ResumeLayout(false);
             this.PerformLayout();

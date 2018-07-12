@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsView.Disciplina
 {
-    partial class frmCadastroDisciplina
+    partial class FrmCadastroDisciplina
     {
         /// <summary>
         /// Required designer variable.
@@ -76,6 +76,7 @@
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -85,6 +86,7 @@
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // frmCadastroDisciplina
             // 

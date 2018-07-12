@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace WindowsFormsView.Disciplina
         public frmListaDisciplinas()
         {
             InitializeComponent();
+        }
+
+        private void frmListaDisciplinas_Load(object sender, EventArgs e)
+        {
+            DisciplinasController disciplinasController = new DisciplinasController();
+            dgvDisciplinas.DataSource = disciplinasController.ListarTodos();
         }
     }
 }
