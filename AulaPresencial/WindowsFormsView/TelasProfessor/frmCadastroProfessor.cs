@@ -27,11 +27,11 @@ namespace WindowsFormsView.TelasProfessor
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Professor novoProfessor = new Professor
-            {
-                Nome = txtNome.Text,
-                Cadastro = int.Parse(txtCadastro.Text)
-            };
+            Professor novoProfessor = new Professor();
+            
+            novoProfessor.Nome = txtNome.Text;
+            novoProfessor.Cadastro = int.Parse(txtCadastro.Text);
+            
 
             ProfessoresController professoresController = new ProfessoresController();
             professoresController.Inserir(novoProfessor);

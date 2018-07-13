@@ -123,6 +123,7 @@
             this.btnListarMateria.TabIndex = 1;
             this.btnListarMateria.Text = "Listar";
             this.btnListarMateria.UseVisualStyleBackColor = true;
+            this.btnListarMateria.Click += new System.EventHandler(this.btnListarMateria_Click);
             // 
             // btnCadastrarMateria
             // 
@@ -132,6 +133,7 @@
             this.btnCadastrarMateria.TabIndex = 0;
             this.btnCadastrarMateria.Text = "Cadastrar";
             this.btnCadastrarMateria.UseVisualStyleBackColor = true;
+            this.btnCadastrarMateria.Click += new System.EventHandler(this.btnCadastrarMateria_Click);
             // 
             // MenuPrincipal
             // 

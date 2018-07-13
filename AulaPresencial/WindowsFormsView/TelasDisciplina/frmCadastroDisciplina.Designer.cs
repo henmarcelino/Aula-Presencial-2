@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsView.TelasDisciplinas
+﻿namespace WindowsFormsView.TelasDisciplina
 {
     partial class FrmCadastroDisciplina
     {

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsView.TelasDisciplinas
+namespace WindowsFormsView.TelasDisciplina
 {
     public partial class FrmCadastroDisciplina : Form
     {
@@ -27,11 +27,11 @@ namespace WindowsFormsView.TelasDisciplinas
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Disciplina novoDisciplina = new Disciplina
-            {
-                Materia = txtMateria.Text,
-                Ciclo = int.Parse(txtCiclo.Text)
-            };
+            Disciplina novoDisciplina = new Disciplina();
+            
+            novoDisciplina.Materia = txtMateria.Text;
+            novoDisciplina.Ciclo = int.Parse(txtCiclo.Text);
+            
 
             DisciplinasController disciplinasController = new DisciplinasController();
             disciplinasController.Inserir(novoDisciplina);

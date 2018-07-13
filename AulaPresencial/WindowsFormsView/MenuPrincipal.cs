@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsView.TelasProfessor;
 using WindowsFormsView.TelasAluno;
+using WindowsFormsView.TelasDisciplina;
 
 namespace WindowsFormsView
 {
@@ -41,6 +42,18 @@ namespace WindowsFormsView
         {
             FrmListaProfessores listProfessores = new FrmListaProfessores();
             listProfessores.ShowDialog();
+        }
+
+        private void btnCadastrarMateria_Click(object sender, EventArgs e)
+        {
+            FrmCadastroDisciplina cadDisciplina = new FrmCadastroDisciplina();
+            cadDisciplina.ShowDialog();
+        }
+
+        private void btnListarMateria_Click(object sender, EventArgs e)
+        {
+            frmListaDisciplinas listDisciplinas = new frmListaDisciplinas();
+            listDisciplinas.ShowDialog();
         }
     }
 }

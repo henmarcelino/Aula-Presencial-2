@@ -27,11 +27,11 @@ namespace WindowsFormsView.TelasAluno
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Aluno novoAluno = new Aluno
-            {
-                Nome = txtNome.Text,
-                Matricula = int.Parse(txtMatricula.Text)
-            };
+            Aluno novoAluno = new Aluno();
+            
+            novoAluno.Nome = txtNome.Text;
+            novoAluno.Matricula = int.Parse(txtMatricula.Text);
+            
 
             AlunosController alunosController = new AlunosController();
             alunosController.Inserir(novoAluno);
